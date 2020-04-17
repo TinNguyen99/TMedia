@@ -1,0 +1,2 @@
+rootProject.name='TMedia'
+include ':app'

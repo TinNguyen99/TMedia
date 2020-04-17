@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme2"
+    android:backgroundTint="#817F7F"
+    android:backgroundTintMode="multiply"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:layout_marginTop="10dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/frame"
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:queryHint="What song..." />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp">
+
+        <include
+            layout="@layout/playbottom"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>
